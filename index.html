@@ -1,127 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>irwan | Personal Hub</title>
-  <!-- FONT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <!-- ICON -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio personal Irwan — developer, learner, and builder exploring mobile apps and web experiences."
+    />
+    <title>Irwan | Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="bg-orb orb-one"></div>
+      <div class="bg-orb orb-two"></div>
 
-  <!-- BACKGROUND BLUR -->
-  <div class="bg-blur"></div>
-  <div class="bg-blur-2"></div>
+      <header class="topbar container">
+        <a href="#home" class="brand" aria-label="Home">irwan</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-  <main class="container">
+      <main id="home" class="container main-content">
+        <section class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow">Developer • Learner • Builder</p>
+            <h1>
+              Building things from<br />
+              <span class="gradient-text">scratch</span>
+            </h1>
+            <p class="lead">
+              I’m Irwan, a self-driven developer who enjoys turning ideas into
+              usable digital experiences. I’m learning every day, exploring app
+              logic, debugging, and building things that feel useful.
+            </p>
 
-    <!-- PROFILE -->
-    <section class="profile">
-      <div class="profile-img-wrap">
-        <img src="profil.jpg" alt="Foto Irwan" class="profile-img">
-      </div>
-      <h1>irwan</h1>
-      <p class="typing"></p>
-    </section>
+            <div class="hero-actions">
+              <a href="#projects" class="button primary">View Projects</a>
+              <a href="#contact" class="button secondary">Let’s Connect</a>
+            </div>
 
-    <!-- ABOUT -->
-    <section class="about glass">
-      <h2>About Me</h2>
-      <p>
-        Sedang belajar membangun sesuatu dari nol.
-        Sedikit demi sedikit, tapi terus berkembang.
-      </p>
+            <div class="status-row">
+              <span class="status-dot"></span>
+              <span>Open to learning and collaboration</span>
+            </div>
+          </div>
 
-      <div class="divider"></div>
+          <div class="profile-card" aria-label="Profile card">
+            <div class="profile-frame">
+              <img src="profil.jpg" alt="Irwan profile" />
+            </div>
+            <div class="profile-meta">
+              <h2>Irwan</h2>
+              <p class="typing" aria-live="polite"></p>
+            </div>
+          </div>
+        </section>
 
-      <h2>Skills</h2>
-      <div class="skill-tags">
-        <span class="tag">AI-Assisted Dev</span>
-        <span class="tag">HTML · CSS · JS</span>
-        <span class="tag">Mobile App</span>
-        <span class="tag">Debugging</span>
-        <span class="tag">App Logic</span>
-        <span class="tag">Code Reading</span>
-      </div>
-    </section>
+        <section id="about" class="section about">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>Curious, consistent, and learning in public.</h2>
+          </div>
 
-    <!-- PROJECT -->
-    <section class="projects glass">
-      <h2>🚀 Work in Progress</h2>
+          <div class="about-grid">
+            <div class="glass-card">
+              <p>
+                Sedang belajar membangun sesuatu dari nol. Sedikit demi sedikit,
+                tapi terus berkembang.
+              </p>
+            </div>
+            <div class="glass-card accent-card">
+              <p>
+                I enjoy reading code, figuring out app logic, and turning rough
+                ideas into something real, useful, and testable.
+              </p>
+            </div>
+          </div>
+        </section>
 
-      <div class="project-card">
-        <div class="project-header">
-          <h3>📱 Mobile App Experiment</h3>
-          <span class="project-status">Active</span>
-        </div>
-        <p>Membangun aplikasi mobile offline &amp; online — learning in progress.</p>
-        <a href="https://irwanjsh.github.io/project_inprogres/" target="_blank" rel="noopener noreferrer" class="project-link">
-          Kunjungi <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
+        <section id="skills" class="section skills">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Focused on fundamentals and practical learning.</h2>
+          </div>
 
-      <div class="project-card">
-        <div class="project-header">
-          <h3>💻 Web Learning Journey</h3>
-          <span class="project-status">Ongoing</span>
-        </div>
-        <p>Kumpulan eksperimen belajar HTML, CSS, dan JavaScript.</p>
-      </div>
-    </section>
+          <div class="skill-grid">
+            <div class="skill-item">
+              <i class="fa-solid fa-brain"></i>
+              <span>AI-Assisted Dev</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML • CSS • JS</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <span>Mobile App</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-bug"></i>
+              <span>Debugging</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>App Logic</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-code"></i>
+              <span>Code Reading</span>
+            </div>
+          </div>
+        </section>
 
-<section class="projects glass">
-    <!-- Temukan saya di : -->
-     <h2>Temukan saya di sini</h2>
-    <!-- SOCIAL LINKS -->
-    <section class="links">
-      <a href="https://www.instagram.com/irwan_l_" class="link-card" target="_blank" rel="noopener noreferrer">
-        <span class="link-icon ig"><i class="fab fa-instagram"></i></span>
-        <span class="link-label">Instagram</span>
-        <i class="fas fa-chevron-right link-arrow"></i>
-      </a>
-      <a href="#" class="link-card">
-        <span class="link-icon tt"><i class="fab fa-tiktok"></i></span>
-        <span class="link-label">TikTok</span>
-        <i class="fas fa-chevron-right link-arrow"></i>
-      </a>
-      <a href="https://github.com/Irwanjsh" class="link-card" target="_blank" rel="noopener noreferrer">
-        <span class="link-icon gh"><i class="fab fa-github"></i></span>
-        <span class="link-label">GitHub</span>
-        <i class="fas fa-chevron-right link-arrow"></i>
-      </a>
-      <a href="#" class="link-card">
-        <span class="link-icon po"><i class="fas fa-globe"></i></span>
-        <span class="link-label">Portfolio</span>
-        <i class="fas fa-chevron-right link-arrow"></i>
-      </a>
-      <a href="https://wa.me/681292465375" class="link-card" target="_blank" rel="noopener noreferrer">
-        <span class="link-icon wa"><i class="fab fa-whatsapp"></i></span>
-        <span class="link-label">WhatsApp</span>
-        <i class="fas fa-chevron-right link-arrow"></i>
-      </a>
-      <a href="#" class="link-card">
-        <span class="link-icon li"><i class="fab fa-linkedin"></i></span>
-        <span class="link-label">LinkedIn</span>
-        <i class="fas fa-chevron-right link-arrow"></i>
-      </a>
-      <a href="mailto:irwansyahckp47@gmail.com" class="link-card">
-        <span class="link-icon em"><i class="fas fa-envelope"></i></span>
-        <span class="link-label">Email</span>
-        <i class="fas fa-chevron-right link-arrow"></i>
-      </a>
-    </section>
-</section>
-  </main>
+        <section id="projects" class="section projects">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Work in progress and experiments.</h2>
+          </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>Made with ☕ and late nights.</p>
-  </footer>
+          <div class="project-list">
+            <article class="project-card glass-card">
+              <div class="card-top">
+                <h3>📱 Mobile App Experiment</h3>
+                <span class="badge success">Active</span>
+              </div>
+              <p>
+                Building a mobile app experience with offline and online learning
+                in progress — focused on practical app flow and implementation.
+              </p>
+              <a href="https://irwanjsh.github.io/project_inprogres/" target="_blank" rel="noreferrer">
+                Visit project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </article>
 
-  <script src="script.js"></script>
-</body>
+            <article class="project-card glass-card">
+              <div class="card-top">
+                <h3>💻 Web Learning Journey</h3>
+                <span class="badge">Ongoing</span>
+              </div>
+              <p>
+                A growing collection of experiments around HTML, CSS, and
+                JavaScript — refining visual design and interaction fundamentals.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact">
+          <div class="section-heading">
+            <p class="eyebrow">Connect</p>
+            <h2>Let’s keep in touch.</h2>
+          </div>
+
+          <div class="contact-list">
+            <a class="contact-item" href="https://www.instagram.com/irwan_l_" target="_blank" rel="noreferrer">
+              <span class="icon ig"><i class="fa-brands fa-instagram"></i></span>
+              <span>Instagram</span>
+              <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
+
+            <a class="contact-item" href="https://github.com/Irwanjsh" target="_blank" rel="noreferrer">
+              <span class="icon gh"><i class="fa-brands fa-github"></i></span>
+              <span>GitHub</span>
+              <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
+
+            <a class="contact-item" href="https://wa.me/681292465375" target="_blank" rel="noreferrer">
+              <span class="icon wa"><i class="fa-brands fa-whatsapp"></i></span>
+              <span>WhatsApp</span>
+              <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
+
+            <a class="contact-item" href="mailto:irwansyahckp47@gmail.com">
+              <span class="icon em"><i class="fa-solid fa-envelope"></i></span>
+              <span>Email</span>
+              <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="container footer">
+        <p>Made with ☕ and late nights.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
