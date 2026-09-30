@@ -145,7 +145,7 @@ button {
 .nav {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 28px;
   color: var(--muted);
   font-size: 0.95rem;
   font-weight: 500;
@@ -461,6 +461,46 @@ button {
   box-shadow: 0 12px 32px rgba(110, 168, 254, 0.15);
 }
 
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.experience-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.exp-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(110, 168, 254, 0.12);
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.exp-year {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.experience-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -710,7 +750,7 @@ button {
   }
 
   .nav.active {
-    max-height: 320px;
+    max-height: 420px;
     z-index: 99;
   }
 
@@ -778,7 +818,8 @@ button {
   }
 
   .project-list,
-  .about-grid {
+  .about-grid,
+  .experience-grid {
     grid-template-columns: 1fr;
   }
 
