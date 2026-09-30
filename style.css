@@ -8,7 +8,7 @@
 :root {
   --bg: #0b1020;
   --bg-soft: #111827;
-  --panel: rgba(17, 24, 39, 0.7);
+  --panel: rgba(17, 24, 39, 0.74);
   --panel-strong: rgba(15, 23, 42, 0.9);
   --border: rgba(148, 163, 184, 0.18);
   --text: #e5eefc;
@@ -19,7 +19,7 @@
   --primary-soft: rgba(110, 168, 254, 0.12);
   --green: #34d399;
   --shadow: 0 22px 60px rgba(8, 12, 24, 0.45);
-  --shadow-sm: 0 8px 20px rgba(8, 12, 24, 0.3);
+  --shadow-sm: 0 12px 24px rgba(8, 12, 24, 0.28);
 }
 
 html {
@@ -66,25 +66,25 @@ button {
 .bg-orb {
   position: fixed;
   border-radius: 50%;
-  filter: blur(90px);
+  filter: blur(92px);
   pointer-events: none;
   z-index: 0;
-  opacity: 0.6;
+  opacity: 0.62;
 }
 
 .orb-one {
-  width: 420px;
-  height: 420px;
-  top: -100px;
+  width: 430px;
+  height: 430px;
+  top: -110px;
   left: -80px;
-  background: rgba(110, 168, 254, 0.24);
+  background: rgba(110, 168, 254, 0.25);
 }
 
 .orb-two {
-  width: 380px;
-  height: 380px;
-  right: -50px;
-  bottom: 20px;
+  width: 390px;
+  height: 390px;
+  right: -70px;
+  bottom: 30px;
   background: rgba(139, 92, 246, 0.22);
 }
 
@@ -105,7 +105,7 @@ button {
 }
 
 .brand {
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 800;
   letter-spacing: -0.08em;
   color: var(--text);
@@ -176,12 +176,12 @@ button {
 }
 
 .main-content {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 12px;
+  padding-bottom: 48px;
 }
 
 .section {
-  padding: 64px 0;
+  padding: 72px 0;
 }
 
 @keyframes fadeUp {
@@ -196,26 +196,26 @@ button {
 }
 
 .fade-in {
-  animation: fadeUp 0.6s ease-out forwards;
+  animation: fadeUp 0.65s ease-out forwards;
 }
 
 .fade-in-delayed-1 {
-  animation: fadeUp 0.6s ease-out 0.1s forwards;
+  animation: fadeUp 0.65s ease-out 0.12s forwards;
   opacity: 0;
 }
 
 .fade-in-delayed-2 {
-  animation: fadeUp 0.6s ease-out 0.2s forwards;
+  animation: fadeUp 0.65s ease-out 0.24s forwards;
   opacity: 0;
 }
 
 .fade-in-delayed-3 {
-  animation: fadeUp 0.6s ease-out 0.3s forwards;
+  animation: fadeUp 0.65s ease-out 0.36s forwards;
   opacity: 0;
 }
 
 .fade-in-delayed-4 {
-  animation: fadeUp 0.6s ease-out 0.4s forwards;
+  animation: fadeUp 0.65s ease-out 0.48s forwards;
   opacity: 0;
 }
 
@@ -224,7 +224,7 @@ button {
   grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
   gap: 48px;
-  min-height: 60vh;
+  min-height: 62vh;
 }
 
 .eyebrow {
@@ -234,15 +234,15 @@ button {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--primary);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-weight: 700;
 }
 
 .hero-copy h1 {
-  font-size: clamp(2.4rem, 6vw, 5rem);
-  line-height: 1.05;
+  font-size: clamp(2.5rem, 6vw, 5.2rem);
+  line-height: 1.02;
   letter-spacing: -0.08em;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-weight: 900;
 }
 
@@ -254,10 +254,10 @@ button {
 }
 
 .lead {
-  max-width: 600px;
+  max-width: 640px;
   color: var(--muted);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.08rem;
+  line-height: 1.75;
 }
 
 .hero-actions {
@@ -273,7 +273,7 @@ button {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  padding: 0.85rem 1.3rem;
+  padding: 0.9rem 1.4rem;
   font-weight: 700;
   font-size: 0.95rem;
   border: 1px solid transparent;
@@ -282,18 +282,18 @@ button {
 }
 
 .button:active {
-  transform: scale(0.96);
+  transform: scale(0.97);
 }
 
 .button.primary {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-strong) 100%);
   color: #fff;
-  box-shadow: 0 14px 34px rgba(110, 168, 254, 0.28);
+  box-shadow: 0 18px 34px rgba(110, 168, 254, 0.28);
 }
 
 .button.primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 18px 44px rgba(110, 168, 254, 0.35);
+  box-shadow: 0 18px 44px rgba(110, 168, 254, 0.36);
 }
 
 .button.secondary {
@@ -308,35 +308,33 @@ button {
   transform: translateY(-2px);
 }
 
-.status-row {
-  display: inline-flex;
+.stats-row {
+  display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   margin-top: 28px;
-  font-size: 0.9rem;
-  color: var(--soft);
-  background: rgba(255, 255, 255, 0.02);
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  min-width: 110px;
+  padding: 10px 14px;
+  border-radius: 14px;
   border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.6rem 0.9rem;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.status-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.12);
-  animation: pulse 2s ease-in-out infinite;
+.stat-item strong {
+  font-size: 1.1rem;
+  color: var(--text);
 }
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.6;
-  }
+.stat-item span {
+  color: var(--muted);
+  font-size: 0.8rem;
 }
 
 .profile-card {
@@ -345,7 +343,7 @@ button {
   background: linear-gradient(180deg, rgba(17, 24, 39, 0.82), rgba(15, 23, 42, 0.72));
   box-shadow: var(--shadow);
   padding: 20px 16px 16px;
-  border-radius: 28px;
+  border-radius: 30px;
   width: 100%;
   max-width: 360px;
   margin-inline: auto;
@@ -398,21 +396,21 @@ button {
 }
 
 .profile-meta {
-  margin-top: 14px;
+  margin-top: 16px;
   text-align: center;
 }
 
 .profile-meta h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   letter-spacing: -0.04em;
   margin-bottom: 6px;
 }
 
 .typing {
   color: var(--primary);
-  font-weight: 600;
-  font-size: 0.95rem;
-  min-height: 1.4em;
+  font-weight: 700;
+  font-size: 0.96rem;
+  min-height: 1.5em;
 }
 
 .section-heading {
@@ -420,23 +418,23 @@ button {
 }
 
 .section-heading h2 {
-  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  font-size: clamp(1.8rem, 4vw, 2.9rem);
   line-height: 1.1;
   letter-spacing: -0.06em;
-  max-width: 650px;
+  max-width: 700px;
 }
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
 }
 
 .glass-card {
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 24px;
+  border-radius: 22px;
+  padding: 24px 22px;
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
 }
@@ -459,13 +457,13 @@ button {
 
 .glass-card-interactive:hover {
   transform: translateY(-4px);
-  border-color: rgba(110, 168, 254, 0.35);
+  border-color: rgba(110, 168, 254, 0.36);
   box-shadow: 0 12px 32px rgba(110, 168, 254, 0.15);
 }
 
 .skill-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 14px;
 }
 
@@ -473,25 +471,27 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 16px 12px;
+  padding: 18px 12px;
   font-weight: 600;
   color: var(--text);
   transition: all 0.3s ease;
   text-align: center;
   font-size: 0.9rem;
+  min-height: 128px;
 }
 
 .skill-icon {
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 12px;
   background: var(--primary-soft);
   color: var(--primary);
   font-size: 1.2rem;
@@ -500,29 +500,26 @@ button {
 
 .skill-item-interactive:hover {
   transform: translateY(-4px);
-  border-color: rgba(110, 168, 254, 0.4);
+  border-color: rgba(110, 168, 254, 0.38);
   background: rgba(110, 168, 254, 0.06);
 }
 
 .skill-item-interactive:hover .skill-icon {
-  transform: scale(1.1);
+  transform: scale(1.12);
   background: rgba(110, 168, 254, 0.2);
-}
-
-.skill-item-interactive:active {
-  transform: scale(0.98);
 }
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 22px;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 24px;
 }
 
 .card-top {
@@ -533,7 +530,7 @@ button {
 }
 
 .card-top h3 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   letter-spacing: -0.04em;
   flex: 1;
 }
@@ -542,11 +539,11 @@ button {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
-  padding: 0.35rem 0.65rem;
+  padding: 0.38rem 0.7rem;
   border: 1px solid rgba(148, 163, 184, 0.2);
   background: rgba(148, 163, 184, 0.08);
   color: var(--soft);
-  font-size: 0.65rem;
+  font-size: 0.64rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -573,18 +570,18 @@ button {
 
 .tech-tag {
   display: inline-flex;
-  padding: 4px 10px;
-  border-radius: 6px;
+  padding: 5px 10px;
+  border-radius: 7px;
   background: rgba(110, 168, 254, 0.1);
   color: var(--primary);
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   font-weight: 600;
 }
 
-.project-card a {
+.project-link {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   margin-top: auto;
   color: var(--primary);
   font-weight: 700;
@@ -595,6 +592,16 @@ button {
   transform: translateY(-4px);
   border-color: rgba(110, 168, 254, 0.35);
   box-shadow: 0 12px 32px rgba(110, 168, 254, 0.15);
+}
+
+.contact-shell {
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.78), rgba(15, 23, 42, 0.72));
+}
+
+.contact-shell p {
+  margin-bottom: 18px;
+  color: var(--soft);
+  font-size: 1.03rem;
 }
 
 .contact-list {
@@ -663,7 +670,7 @@ button {
 }
 
 .footer {
-  padding: 8px 0 48px;
+  padding: 8px 0 54px;
   text-align: center;
   color: var(--muted);
   font-size: 0.9rem;
@@ -677,7 +684,7 @@ button {
   }
 
   .section {
-    padding: 48px 0;
+    padding: 56px 0;
   }
 }
 
@@ -694,7 +701,7 @@ button {
     flex-direction: column;
     gap: 0;
     background: rgba(11, 16, 32, 0.98);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
     border-top: 1px solid var(--border);
     padding: 12px 0;
     max-height: 0;
@@ -703,7 +710,7 @@ button {
   }
 
   .nav.active {
-    max-height: 300px;
+    max-height: 320px;
     z-index: 99;
   }
 
@@ -722,7 +729,7 @@ button {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2rem, 5.5vw, 3.5rem);
+    font-size: clamp(2rem, 5.5vw, 3.6rem);
     margin-bottom: 12px;
   }
 
@@ -732,12 +739,22 @@ button {
 
   .hero-actions {
     flex-direction: column;
+    align-items: stretch;
     gap: 10px;
   }
 
   .button {
     width: 100%;
     padding: 0.9rem 1.2rem;
+  }
+
+  .stats-row {
+    gap: 10px;
+  }
+
+  .stat-item {
+    flex: 1 1 30%;
+    min-width: 0;
   }
 
   .profile-card {
@@ -765,10 +782,6 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .contact-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .card-top {
     flex-direction: column;
     align-items: flex-start;
@@ -793,28 +806,25 @@ button {
   }
 
   .hero-copy h1 {
-    font-size: clamp(1.6rem, 5vw, 2.5rem);
+    font-size: clamp(1.7rem, 5vw, 2.7rem);
   }
 
   .lead {
     font-size: 0.9rem;
   }
 
-  .hero-actions {
-    gap: 8px;
-  }
-
   .button {
-    padding: 0.8rem 1rem;
+    padding: 0.82rem 1rem;
     font-size: 0.9rem;
   }
 
-  .status-row {
-    font-size: 0.85rem;
+  .stat-item {
+    min-width: 0;
+    flex: 1 1 100%;
   }
 
   .section-heading h2 {
-    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-size: clamp(1.45rem, 4vw, 2rem);
   }
 
   .glass-card {

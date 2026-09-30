@@ -29,7 +29,7 @@ function type() {
         isPaused = false;
         isDeleting = true;
         type();
-      }, 1800);
+      }, 1700);
       return;
     }
 
@@ -56,16 +56,15 @@ const navMenu = document.getElementById('navMenu');
 
 if (menuToggle && navMenu) {
   menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
-    navMenu.classList.toggle('active');
-    menuToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+    const isActive = navMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active', isActive);
+    menuToggle.setAttribute('aria-expanded', String(isActive));
   });
 
-  const navLinks = navMenu.querySelectorAll('.nav-link');
-  navLinks.forEach(link => {
+  navMenu.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
-      menuToggle.classList.remove('active');
       navMenu.classList.remove('active');
+      menuToggle.classList.remove('active');
       menuToggle.setAttribute('aria-expanded', 'false');
     });
   });
@@ -78,18 +77,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       e.preventDefault();
       const target = document.querySelector(href);
       if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
   });
 });
 
 const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -80px 0px',
+  threshold: 0.12,
+  rootMargin: '0px 0px -80px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -108,7 +104,3 @@ document.querySelectorAll('.section').forEach(section => {
   section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
   observer.observe(section);
 });
-
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  document.documentElement.setAttribute('data-theme', 'dark');
-}
