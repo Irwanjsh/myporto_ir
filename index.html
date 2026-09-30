@@ -2,12 +2,13 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta
       name="description"
-      content="Portfolio personal Irwan — developer, learner, and builder exploring mobile apps and web experiences."
+      content="Portfolio personal Irwan — developer, learner, dan builder yang fokus pada mobile apps dan web experiences."
     />
-    <title>Irwan | Personal Portfolio</title>
+    <meta name="theme-color" content="#0b1020" />
+    <title>Irwan | Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,43 +27,48 @@
       <div class="bg-orb orb-two"></div>
 
       <header class="topbar container">
-        <a href="#home" class="brand" aria-label="Home">irwan</a>
-        <nav class="nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+        <a href="#home" class="brand" aria-label="Kembali ke home">irwan</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" id="navMenu" aria-label="Navigasi utama">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </nav>
       </header>
 
       <main id="home" class="container main-content">
-        <section class="hero section">
+        <!-- HERO SECTION -->
+        <section class="hero section" id="hero-section">
           <div class="hero-copy">
-            <p class="eyebrow">Developer • Learner • Builder</p>
-            <h1>
+            <p class="eyebrow fade-in">Developer • Learner • Builder</p>
+            <h1 class="fade-in-delayed-1">
               Building things from<br />
               <span class="gradient-text">scratch</span>
             </h1>
-            <p class="lead">
-              I’m Irwan, a self-driven developer who enjoys turning ideas into
-              usable digital experiences. I’m learning every day, exploring app
-              logic, debugging, and building things that feel useful.
+            <p class="lead fade-in-delayed-2">
+              Saya Irwan, seorang developer yang self-driven dan enjoy mengubah ide menjadi digital experiences yang berguna. Belajar setiap hari, explore app logic, dan building things yang terasa useful.
             </p>
 
-            <div class="hero-actions">
-              <a href="#projects" class="button primary">View Projects</a>
-              <a href="#contact" class="button secondary">Let’s Connect</a>
+            <div class="hero-actions fade-in-delayed-3">
+              <a href="#projects" class="button primary">Lihat Projects</a>
+              <a href="#contact" class="button secondary">Mari Connect</a>
             </div>
 
-            <div class="status-row">
+            <div class="status-row fade-in-delayed-4">
               <span class="status-dot"></span>
-              <span>Open to learning and collaboration</span>
+              <span>Open untuk learning & collaboration</span>
             </div>
           </div>
 
-          <div class="profile-card" aria-label="Profile card">
+          <div class="profile-card fade-in-delayed-2" aria-label="Kartu profil">
+            <div class="profile-glow"></div>
             <div class="profile-frame">
-              <img src="profil.jpg" alt="Irwan profile" />
+              <img src="profil.jpg" alt="Profil Irwan" loading="lazy" />
             </div>
             <div class="profile-meta">
               <h2>Irwan</h2>
@@ -71,122 +77,144 @@
           </div>
         </section>
 
+        <!-- ABOUT SECTION -->
         <section id="about" class="section about">
           <div class="section-heading">
             <p class="eyebrow">About</p>
-            <h2>Curious, consistent, and learning in public.</h2>
+            <h2>Curious, consistent, dan always learning in public.</h2>
           </div>
 
           <div class="about-grid">
-            <div class="glass-card">
+            <div class="glass-card glass-card-interactive">
+              <div class="card-icon">📝</div>
               <p>
-                Sedang belajar membangun sesuatu dari nol. Sedikit demi sedikit,
-                tapi terus berkembang.
+                Sedang belajar membangun sesuatu dari nol. Sedikit demi sedikit, tapi terus berkembang dan tidak pernah berhenti belajar.
               </p>
             </div>
-            <div class="glass-card accent-card">
+            <div class="glass-card accent-card glass-card-interactive">
+              <div class="card-icon">💡</div>
               <p>
-                I enjoy reading code, figuring out app logic, and turning rough
-                ideas into something real, useful, and testable.
+                Suka membaca code, figure out app logic, dan transform rough ideas jadi something real, useful, dan testable.
               </p>
             </div>
           </div>
         </section>
 
+        <!-- SKILLS SECTION -->
         <section id="skills" class="section skills">
           <div class="section-heading">
             <p class="eyebrow">Skills</p>
-            <h2>Focused on fundamentals and practical learning.</h2>
+            <h2>Fokus pada fundamentals dan practical learning.</h2>
           </div>
 
           <div class="skill-grid">
-            <div class="skill-item">
-              <i class="fa-solid fa-brain"></i>
+            <div class="skill-item skill-item-interactive">
+              <div class="skill-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
               <span>AI-Assisted Dev</span>
             </div>
-            <div class="skill-item">
-              <i class="fa-brands fa-html5"></i>
+            <div class="skill-item skill-item-interactive">
+              <div class="skill-icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
               <span>HTML • CSS • JS</span>
             </div>
-            <div class="skill-item">
-              <i class="fa-solid fa-mobile-screen-button"></i>
+            <div class="skill-item skill-item-interactive">
+              <div class="skill-icon">
+                <i class="fa-solid fa-mobile"></i>
+              </div>
               <span>Mobile App</span>
             </div>
-            <div class="skill-item">
-              <i class="fa-solid fa-bug"></i>
+            <div class="skill-item skill-item-interactive">
+              <div class="skill-icon">
+                <i class="fa-solid fa-bug"></i>
+              </div>
               <span>Debugging</span>
             </div>
-            <div class="skill-item">
-              <i class="fa-solid fa-diagram-project"></i>
+            <div class="skill-item skill-item-interactive">
+              <div class="skill-icon">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
               <span>App Logic</span>
             </div>
-            <div class="skill-item">
-              <i class="fa-solid fa-code"></i>
+            <div class="skill-item skill-item-interactive">
+              <div class="skill-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
               <span>Code Reading</span>
             </div>
           </div>
         </section>
 
+        <!-- PROJECTS SECTION -->
         <section id="projects" class="section projects">
           <div class="section-heading">
             <p class="eyebrow">Projects</p>
-            <h2>Work in progress and experiments.</h2>
+            <h2>Work in progress dan experiments.</h2>
           </div>
 
           <div class="project-list">
-            <article class="project-card glass-card">
+            <article class="project-card glass-card project-card-interactive">
               <div class="card-top">
                 <h3>📱 Mobile App Experiment</h3>
                 <span class="badge success">Active</span>
               </div>
               <p>
-                Building a mobile app experience with offline and online learning
-                in progress — focused on practical app flow and implementation.
+                Building mobile app experience dengan offline dan online capability — fokus pada practical app flow dan implementation patterns.
               </p>
-              <a href="https://irwanjsh.github.io/project_inprogres/" target="_blank" rel="noreferrer">
+              <div class="project-meta">
+                <span class="tech-tag">Mobile</span>
+                <span class="tech-tag">Learning</span>
+              </div>
+              <a href="https://irwanjsh.github.io/project_inprogres/" target="_blank" rel="noreferrer" class="project-link">
                 Visit project <i class="fa-solid fa-arrow-right"></i>
               </a>
             </article>
 
-            <article class="project-card glass-card">
+            <article class="project-card glass-card project-card-interactive">
               <div class="card-top">
                 <h3>💻 Web Learning Journey</h3>
                 <span class="badge">Ongoing</span>
               </div>
               <p>
-                A growing collection of experiments around HTML, CSS, and
-                JavaScript — refining visual design and interaction fundamentals.
+                Growing collection experiments around HTML, CSS, dan JavaScript — refining visual design dan interaction fundamentals daily.
               </p>
+              <div class="project-meta">
+                <span class="tech-tag">Frontend</span>
+                <span class="tech-tag">Design</span>
+              </div>
             </article>
           </div>
         </section>
 
+        <!-- CONTACT SECTION -->
         <section id="contact" class="section contact">
           <div class="section-heading">
             <p class="eyebrow">Connect</p>
-            <h2>Let’s keep in touch.</h2>
+            <h2>Mari tetap terhubung.</h2>
           </div>
 
           <div class="contact-list">
-            <a class="contact-item" href="https://www.instagram.com/irwan_l_" target="_blank" rel="noreferrer">
+            <a class="contact-item contact-item-interactive" href="https://www.instagram.com/irwan_l_" target="_blank" rel="noreferrer" aria-label="Instagram">
               <span class="icon ig"><i class="fa-brands fa-instagram"></i></span>
               <span>Instagram</span>
               <i class="fa-solid fa-chevron-right arrow"></i>
             </a>
 
-            <a class="contact-item" href="https://github.com/Irwanjsh" target="_blank" rel="noreferrer">
+            <a class="contact-item contact-item-interactive" href="https://github.com/Irwanjsh" target="_blank" rel="noreferrer" aria-label="GitHub">
               <span class="icon gh"><i class="fa-brands fa-github"></i></span>
               <span>GitHub</span>
               <i class="fa-solid fa-chevron-right arrow"></i>
             </a>
 
-            <a class="contact-item" href="https://wa.me/681292465375" target="_blank" rel="noreferrer">
+            <a class="contact-item contact-item-interactive" href="https://wa.me/681292465375" target="_blank" rel="noreferrer" aria-label="WhatsApp">
               <span class="icon wa"><i class="fa-brands fa-whatsapp"></i></span>
               <span>WhatsApp</span>
               <i class="fa-solid fa-chevron-right arrow"></i>
             </a>
 
-            <a class="contact-item" href="mailto:irwansyahckp47@gmail.com">
+            <a class="contact-item contact-item-interactive" href="mailto:irwansyahckp47@gmail.com" aria-label="Email">
               <span class="icon em"><i class="fa-solid fa-envelope"></i></span>
               <span>Email</span>
               <i class="fa-solid fa-chevron-right arrow"></i>
@@ -196,10 +224,10 @@
       </main>
 
       <footer class="container footer">
-        <p>Made with ☕ and late nights.</p>
+        <p>Made with ☕ dan late nights.</p>
       </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
